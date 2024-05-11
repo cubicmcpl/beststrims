@@ -58,7 +58,7 @@
 
 
       if (accessToken == null && token == null) {
-          window.location.href ="/error.html";
+          window.location.href ="/error";
       }else{
 
         if (accessToken != null) {
@@ -80,10 +80,10 @@
                 document.getElementById("txt").innerText = "Zalogowano";
                 localStorage.setItem("token", `${avatar}` + "|" + `${id}`);
               }else{
-                window.location.href ="/error.html";
+                window.location.href ="/error";
               }
             }else{
-              window.location.href ="/error.html";
+              window.location.href ="/error";
             }
 
             //set the avatar image by constructing a url to access discord's cdn
